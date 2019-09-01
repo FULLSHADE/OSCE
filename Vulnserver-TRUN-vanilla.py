@@ -4,8 +4,6 @@
 # Author : Nu11pwn
 
 import socket
-import os
-import sys
 
 victim_host = "10.0.0.213"
 port = 9999
