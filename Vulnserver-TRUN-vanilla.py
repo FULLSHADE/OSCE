@@ -1,6 +1,5 @@
 #!/usr/bin/python
 
-
 # Author : Nu11pwn
 
 import socket
