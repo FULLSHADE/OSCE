@@ -1,5 +1,11 @@
 #!/usr/bin/python
 
+"""
+Xitami Web Server SEH overflow using a egghunter
+! warning ! All POP POP RETs have nullbytes x00, must use a partial SEH overwrite
+Author  : Nu11pwn
+"""
+
 import socket
 from pwn import *
 
