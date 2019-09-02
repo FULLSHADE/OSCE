@@ -1,5 +1,13 @@
 #!/usr/bin/python
 
+print("""
+=====================================
+Easy File Sharing Server SEH overflow
+	Written by Nu11pwn\n\n
+=====================================
+""")
+
+
 import socket
 from pwn import #
 
