@@ -3,7 +3,7 @@
 I am writing 100 POC's for exploits from scratch as practice for OSCE, all BOF. 
 
 ```
-Current status : 4/100
+Current status : 5/100
 Metasploit contributions : 0
 0day discoveries : 0
 Assigned CVE's : 0
@@ -20,4 +20,6 @@ Including: Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX bypassing and mu
 
 1. Easy File Sharing Web Server SEH overflow
 2. Easy File Sharing Web Server SEH overflow + egghunter
+3. Xitami Web Server SEH overflow + egghunter + partial SEH overwrite
 4. Vulnserver GMON SEH overflow + egghunter
+
