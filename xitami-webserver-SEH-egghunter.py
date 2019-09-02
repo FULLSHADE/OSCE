@@ -1,11 +1,18 @@
 #!/usr/bin/python
-
-print("""
-=====================================
-Easy File Sharing Server SEH overflow
-	Written by Nu11pwn\n\n
-=====================================
-""")
+#
+# September 2st, 2019 | https://github.io/nu11pwned
+# Author : Nu11pwn
+# Development tools used
+#	- Python, msf pattern create/offset
+#	- Immunity debugger / mona.py
+# Sytems used
+# 	- Attacker / host system : Ubuntu 
+#	- Victim system / Windows 7 sp1
+# This was a  SEH (Structured exception handler) exploit which 
+# required a POP POP RET sequence, a short jump, and a egghunter to trigger
+# shellcode to obtain a shell on the victim testing system.
+# Issues faced: 
+#	POP POP RET had a bad byte, so we needed a partial SEH overwrite
 
 
 import socket
