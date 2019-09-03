@@ -33,5 +33,5 @@ Including: Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX bypassing and mu
 ## Bypassing ASLR
 
 ----
-## Heap Spraying (and so it begins, let's stop being skids, eh?)
+## Heap exploitation (and so it begins, let's stop being skids, eh?)
 
