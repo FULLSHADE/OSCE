@@ -27,7 +27,7 @@ Including: Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX bypassing and mu
 4. Vulnserver GMON SEH overflow + egghunter
 
 ----
-## Using ROP to bypass DEP on Windows
+## Using ROP to bypass DEP and ASLR on Windows
 
 ----
 ## Bypassing ASLR
