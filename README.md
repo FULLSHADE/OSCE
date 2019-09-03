@@ -25,3 +25,12 @@ Including: Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX bypassing and mu
 3. Xitami Web Server SEH overflow + egghunter + partial SEH overwrite
 4. Vulnserver GMON SEH overflow + egghunter
 
+----
+## Using ROP to bypass DEP on Windows
+
+----
+## Bypassing ASLR
+
+----
+## Heap Spraying (and so it begins, let's stop being skids, eh?)
+
