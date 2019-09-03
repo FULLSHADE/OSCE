@@ -3,7 +3,7 @@
 I am writing 100 POC's for exploits from scratch as practice for OSCE, all BOF. 
 
 ```
-Current status : 5/100
+Current status : 6/100
 Metasploit contributions : 0
 0day discoveries : 0
 Assigned CVE's : 0
@@ -15,6 +15,7 @@ Including: Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX bypassing and mu
 ## Vanilla Stack Based Buffer Overflow
 
 1. Vulnserver TRUN vanilla EIP overflow
+2. FreeFloat FTP Server vanilla EIP overflow
 
 ----
 ## Structured Exception Handler (SEH) Overwrite + egghunter
