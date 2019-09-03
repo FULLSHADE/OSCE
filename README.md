@@ -3,7 +3,7 @@
 I am writing 100 POC's for exploits from scratch as practice for OSCE, all BOF. 
 
 ```
-Current status : 7/100
+Current status : 8/100
 Metasploit contributions : 0
 0day discoveries : 0
 Assigned CVE's : 0
@@ -28,6 +28,8 @@ Including: Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX bypassing and mu
 
 ----
 ## Using ROP to bypass DEP on Windows
+
+1. Vulnserver TRUN + DEP enabled + ROP chains bypass
 
 ----
 ## Bypassing ASLR
