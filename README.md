@@ -1,6 +1,6 @@
 ## Advanced Windows exploit development practice - 100 proof of concepts
 ----
-I am writing 100 POC's for exploits from scratch as practice for OSCE, all BOF. 
+I am writing 100 POC's for various exploits and corresponding advanced memory protections for education purposes.
 
 ```
 Current status : 8/100
@@ -9,7 +9,7 @@ Metasploit contributions : 0
 Assigned CVE's : 0
 ```
 
-Including: Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX bypassing and much more
+Including: Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX , SafeSeh, Stack cookies, and much more...
 
 ----
 ## Vanilla Stack Based Buffer Overflow
