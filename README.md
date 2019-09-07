@@ -1,4 +1,4 @@
-## Writing 100 Proof Of Concepts for buffer overflows from scratch
+## Advanced Windows exploit development practice - 100 proof of concepts
 ----
 I am writing 100 POC's for exploits from scratch as practice for OSCE, all BOF. 
 
