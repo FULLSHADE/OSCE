@@ -27,7 +27,7 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 4. Vulnserver GMON SEH overflow + egghunter
 
 ----
-## Using ROP to bypass DEP on Windows
+## Using ROP to bypass Data Execution Prevention (DEP)
 
 1. Vulnserver TRUN + DEP enabled + ROP chains bypass
 
