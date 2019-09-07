@@ -35,5 +35,8 @@ Including: Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX bypassing and mu
 ## Bypassing ASLR
 
 ----
+## Bypassing SafeSEH and SEHHOP
+
+----
 ## Heap exploitation (and so it begins, let's stop being skids, eh?)
 
