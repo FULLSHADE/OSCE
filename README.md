@@ -1,6 +1,6 @@
 ## Advanced Windows exploit development practice - 100 proof of concepts
 ----
-I am writing 100 POC's for various exploits and corresponding advanced memory protections for education purposes.
+I am writing 100 POC's for various exploits, some which include bypassing advanced memory protections for educational purposes.
 
 ```
 Current status : 9/100
