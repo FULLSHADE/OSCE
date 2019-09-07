@@ -9,7 +9,7 @@ Metasploit contributions : 0
 Assigned CVE's : 0
 ```
 
-Including: Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX , SafeSeh, Stack cookies, and much more...
+Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX , SafeSeh, Stack cookies, and much more...
 
 ----
 ## Vanilla Stack Based Buffer Overflow
