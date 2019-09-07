@@ -2,7 +2,7 @@
 
 # Author : Nu11pwn
 # POC for the Brainpan BOF found on Vulnhub, standard vanilla EIP overwrite + jmpesp exploit
-#   Victim system : Windows 7 sp1
+#   Victim system : Windows 7
 #   Attacker system : Ubuntu
 import socket
 
