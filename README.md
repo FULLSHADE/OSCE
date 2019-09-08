@@ -3,7 +3,7 @@
 I am writing 100 POC's for various exploits, some which include bypassing advanced memory protections for educational purposes.
 
 ```
-Current status : 10/100
+Current status : 11/100
 Metasploit contributions : 0
 0day discoveries : 0
 Assigned CVE's : 0
@@ -19,6 +19,7 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 3. PCMan FTP Server vanilla EIP overflow
 4. Brainpan VulnHub box vanilla EIP overflow
 5. DoStackBufferOverflowGood vanilla EIP overflow
+6. MiniShare 1.4.1 vanilla EIP overflow
 
 ----
 ## Structured Exception Handler (SEH) Overwrite + egghunter
