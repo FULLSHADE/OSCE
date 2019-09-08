@@ -18,7 +18,7 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 2. FreeFloat FTP Server vanilla EIP overflow
 3. PCMan FTP Server vanilla EIP overflow
 4. Brainpan VulnHub box vanilla EIP overflow
-5. dostackbufferoverflowgood vanilla EIP overflow
+5. DoStackBufferOverflowGood vanilla EIP overflow
 
 ----
 ## Structured Exception Handler (SEH) Overwrite + egghunter
