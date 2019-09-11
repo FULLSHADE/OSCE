@@ -47,6 +47,3 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 
 ----
 ## Bypassing ASLR
-
-----
-## Vanilla EIP Heap spraying
