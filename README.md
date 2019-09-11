@@ -1,4 +1,10 @@
 ## Advanced Windows exploit development practice - 100 proof of concepts
+I am following the `Windows Exploit Development Tutorial Series` as a guide for exploit development progression from https://www.fuzzysecurity.com/tutorials.html
+
+I first learn how to exploit a certain type of protections or restriction, then read lot's of exploits and writeups about it, then search exploit-db for software that is vulnerable to that specific attack vector, then I test my new knowledge against said program. 
+
+Eventually I will start hunting for 0day in software that relate to these topics.
+
 ----
 I am writing 100 POC's for various exploits, some which include bypassing advanced memory protections for educational purposes.
 
