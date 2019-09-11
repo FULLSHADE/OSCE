@@ -42,14 +42,4 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 ## Bypassing ASLR
 
 ----
-## Bypassing SafeSEH and SEHHOP
-
-----
-## Heap spraying
-
-----
-## Vanilla Heap based overflow
-
-----
-## Kernel exploitation
-
+## Vanilla EIP Heap spraying
