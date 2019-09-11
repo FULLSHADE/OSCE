@@ -26,8 +26,12 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 
 1. Easy File Sharing Web Server SEH overflow
 2. Easy File Sharing Web Server SEH overflow + egghunter
-3. Xitami Web Server SEH overflow + egghunter + partial SEH overwrite
-4. Vulnserver GMON SEH overflow + egghunter
+3. Vulnserver GMON SEH overflow + egghunter
+
+----
+## Structured Exception Handler (SEH) Overwrite + restrictions 
+
+1. Xitami Web Server SEH overflow + egghunter + partial SEH overwrite
 
 ----
 ## Using ROP to bypass (DEP) and stack pivoting
