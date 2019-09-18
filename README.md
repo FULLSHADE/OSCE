@@ -43,7 +43,7 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 ----
 ## Using ROP to bypass (DEP) and stack pivoting
 
-1. Vulnserver TRUN + DEP enabled + ROP chains bypass
+1. Vulnserver TRUN + DEP enabled + ROP chains bypass (VirtualProtect() method)
 
 ----
 ## Bypassing ASLR
