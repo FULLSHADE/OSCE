@@ -30,7 +30,7 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 6. MiniShare 1.4.1 vanilla EIP overflow
 
 ----
-## Structured Exception Handler (SEH) Overwrite + egghunter / and or restrictions
+## Structured Exception Handler (SEH) Overwrite + egghunter
 
 1. Easy File Sharing Web Server SEH overflow
 2. Easy File Sharing Web Server SEH overflow + egghunter
@@ -41,7 +41,7 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 ## Unicode Buffer Overflows
 
 ----
-## Using ROP to bypass (DEP) and stack pivoting
+## ROP to bypass (DEP)
 
 1. Vulnserver TRUN + DEP enabled + ROP chains bypass (VirtualProtect() method)
 
@@ -49,4 +49,4 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 ## Bypassing ASLR
 
 ----
-## Writing / creating Metasploit modules
+## Metasploit modules
