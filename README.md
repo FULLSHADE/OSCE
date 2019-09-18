@@ -11,6 +11,7 @@ I am writing 50 POC's for various exploits, some which include bypassing advance
 
 ```
 Current status : 11/100
+Metasploit modules: 0
 Metasploit contributions : 0
 0day discoveries : 0
 Assigned CVE's : 0
