@@ -46,3 +46,6 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 
 ----
 ## Bypassing ASLR
+
+----
+## Writing / creating Metasploit modules
