@@ -41,9 +41,9 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 ## Unicode Buffer Overflows
 
 ----
-## ROP to bypass (DEP)
+## ROP to bypass Data Exectuion Prevention (DEP)
 
-1. Vulnserver TRUN + DEP enabled + ROP chains bypass (VirtualProtect() method)
+1. Vulnserver TRUN + DEP enabled + ROP chain - VirtualProtect() method
 
 ----
 ## Bypassing ASLR
