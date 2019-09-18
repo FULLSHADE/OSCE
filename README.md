@@ -17,7 +17,7 @@ Metasploit contributions : 0
 Assigned CVE's : 0
 ```
 
-I would like to include but not be limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX , SafeSeh, Stack cookies, ASLR, DEP, unicode restrictions, and much more...
+I would like to include but not be limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP/NX , SafeSeh, Stack cookies, unicode restrictions, and much more...
 
 ----
 ## Vanilla Stack Based Buffer Overflow
