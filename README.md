@@ -29,16 +29,15 @@ Including but not limited to : Vannila EIP overwrite, SEH + egghunters, ASLR/DEP
 6. MiniShare 1.4.1 vanilla EIP overflow
 
 ----
-## Structured Exception Handler (SEH) Overwrite + egghunter
+## Structured Exception Handler (SEH) Overwrite + egghunter / and or restrictions
 
 1. Easy File Sharing Web Server SEH overflow
 2. Easy File Sharing Web Server SEH overflow + egghunter
 3. Vulnserver GMON SEH overflow + egghunter
+4. Xitami Web Server SEH overflow + egghunter + partial SEH overwrite
 
 ----
-## Structured Exception Handler (SEH) Overwrite + restrictions 
-
-1. Xitami Web Server SEH overflow + egghunter + partial SEH overwrite
+## Unicode Buffer Overflows
 
 ----
 ## Using ROP to bypass (DEP) and stack pivoting
