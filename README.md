@@ -65,19 +65,11 @@ I would like to include but not be limited to : Vannila EIP overwrite, SEH + egg
 1. Vulnserver TRUN + DEP enabled + ROP chain - VirtualProtect() method
 2. ASX to MP3 converter 3.1.2.1 + DEP enabled + ROP chain - VirtualProtect() method
 3. VUPlayer 2.49 + DEP enabled + ROP chain - VirtualProtect() method
-----
-## Bypassing ASLR - Partial EIP overwrite
 
 ----
 ## Vanilla EIP Heap spraying
 
 1. RSP MP3 Player - OCX ActiveX EIP heap spray
-
-----
-## Use-After-Free (UAF) Heap spraying
-
-----
-## Bypassing EMET 5.2
 
 ----
 ## 0day discoveries / disclosures
@@ -91,6 +83,4 @@ I would like to include but not be limited to : Vannila EIP overwrite, SEH + egg
 ## Metasploit modules
    **Someone else contributing my exploits:**
    1. [*windows/http/file_sharing_wizard_seh*](https://www.rapid7.com/db/modules/exploit/windows/http/file_sharing_wizard_seh)
-   
-   **Modules contributed by me:**
-   
+  
